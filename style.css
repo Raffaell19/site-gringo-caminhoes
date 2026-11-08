@@ -792,41 +792,80 @@ button, input, select {
   justify-content: space-between;
   margin-top: auto;
   margin-bottom: 1.25rem;
+  gap: 0.75rem;
 }
 
+.price-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label,
 .price-prefix {
   display: block;
   font-size: 0.72rem;
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
 }
 
 .price-value {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: 1.25rem;
   font-weight: 900;
   color: #ffffff;
   line-height: 1.1;
 }
 
+.simulate-quick-btn,
 .btn-card-calc {
   background-color: var(--bg-surface-elevated);
   color: var(--accent-amber);
-  border: 1px solid var(--border-light);
-  padding: 0.45rem 0.95rem;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  padding: 0.42rem 0.85rem;
   border-radius: var(--radius-sm);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 700;
   cursor: pointer;
   transition: var(--transition-fast);
+  white-space: nowrap;
 }
 
+.simulate-quick-btn:hover,
 .btn-card-calc:hover {
   background-color: var(--accent-amber);
   color: #0b0f17;
   border-color: var(--accent-amber);
+}
+
+.card-cta-row {
+  width: 100%;
+}
+
+.card-cta-row .btn {
+  padding: 0.7rem 1.25rem;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.card-cta-row .btn .btn-icon,
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .empty-results-state {
