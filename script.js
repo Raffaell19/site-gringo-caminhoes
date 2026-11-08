@@ -160,7 +160,8 @@ function initCatalogFilters() {
       const category = card.getAttribute("data-category") || "";
       const text = card.innerText.toLowerCase();
 
-      const matchesCategory = (currentFilter === "all") || (category === currentFilter);
+      const categories = category.toLowerCase().split(/\s+/);
+      const matchesCategory = (currentFilter === "all") || categories.includes(currentFilter.toLowerCase());
       const matchesSearch = !query || text.includes(query);
 
       if (matchesCategory && matchesSearch) {

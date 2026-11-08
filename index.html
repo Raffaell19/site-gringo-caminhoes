@@ -172,12 +172,12 @@
       <div class="container">
         <div class="section-header-flex">
           <div>
-            <div class="kicker-tag">VITRINE DE VEÍCULOS</div>
-            <h2 class="section-heading">Caminhões & Carretas Disponíveis</h2>
-            <p class="section-subtext">Selecione uma categoria ou use a busca para encontrar o pesado perfeito para a sua rota.</p>
+            <div class="kicker-tag">ESTOQUE COMPLETO E PRONTA ENTREGA</div>
+            <h2 class="section-heading">Máquinas Pesadas, Caminhões & Equipamentos</h2>
+            <p class="section-subtext">Confira nossa seleção de escavadeiras, pás carregadeiras, caminhões caçamba, baús e tratores revisados.</p>
           </div>
           <div class="stock-counter">
-            <span class="count-badge" id="visibleCount">12</span> veículos encontrados
+            <span class="count-badge" id="visibleCount">12</span> itens no pátio
           </div>
         </div>
 
@@ -187,514 +187,502 @@
             <svg class="search-icon" viewBox="0 0 24 24">
               <path fill="none" stroke="currentColor" stroke-width="2" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/>
             </svg>
-            <input type="text" id="searchInput" placeholder="Buscar por modelo, marca (Scania, Volvo, MB), tração..." autocomplete="off">
+            <input type="text" id="searchInput" placeholder="Buscar por modelo, marca (LiuGong, Ford, Volvo, MB, Agrale)..." autocomplete="off">
             <button class="clear-search-btn" id="clearSearch" aria-label="Limpar busca">✕</button>
           </div>
 
           <div class="filter-tabs" id="filterTabs">
-            <button class="filter-btn active" data-filter="all">Todos os Pesados</button>
-            <button class="filter-btn" data-filter="scania">Linha Scania</button>
-            <button class="filter-btn" data-filter="volvo">Linha Volvo</button>
-            <button class="filter-btn" data-filter="mercedes">Mercedes-Benz</button>
-            <button class="filter-btn" data-filter="carretas">Carretas & Semirreboques</button>
-            <button class="filter-btn" data-filter="outros">Especiais & Utilitários</button>
+            <button class="filter-btn active" data-filter="all">Todos os Equipamentos (12)</button>
+            <button class="filter-btn" data-filter="liugong">Máquinas LiuGong (5)</button>
+            <button class="filter-btn" data-filter="caminhoes">Linha Caminhões (5)</button>
+            <button class="filter-btn" data-filter="cacamba">Caminhões Caçamba (2)</button>
+            <button class="filter-btn" data-filter="bau">Caminhões Baú (2)</button>
+            <button class="filter-btn" data-filter="agricola">Tratores & Agrícola (1)</button>
+            <button class="filter-btn" data-filter="troca">Veículos de Troca (1)</button>
           </div>
         </div>
 
-        <!-- Grid de Cards de Veículos -->
+                <!-- Grid de Cards de Veículos & Máquinas -->
         <div class="vehicles-grid" id="vehiclesGrid">
 
-          <!-- Card 1: Scania R450 Streamline 6x2 -->
-          <article class="truck-card" data-category="scania" data-brand="scania" data-id="1">
+          <!-- Card 1: Mini Escavadeira LiuGong 9035E ZTS -->
+          <article class="truck-card" data-category="liugong maquinas escavadeira" data-brand="liugong" data-id="1">
             <div class="card-media">
-              <img src="assets/img/truck_1.jpg" alt="Scania R450 6x2 Streamline" loading="lazy">
+              <img src="assets/img/truck_1.jpg" alt="Mini Escavadeira LiuGong 9035E ZTS" loading="lazy">
               <span class="status-pill status-ready">Pronta Entrega</span>
-              <span class="traction-badge">6x2</span>
+              <span class="traction-badge">3.880 kg</span>
             </div>
             <div class="card-body">
               <div class="card-brand-row">
-                <span class="card-make">SCANIA</span>
-                <span class="card-year">2021 / 2021</span>
+                <span class="card-make">LIUGONG</span>
+                <span class="card-year">2023 / 2023</span>
               </div>
-              <h3 class="card-title">Scania R 450 Highline Streamline</h3>
+              <h3 class="card-title">Mini Escavadeira LiuGong 9035E ZTS</h3>
               <ul class="specs-list">
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>420.000 km</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Peso Operacional: 3.880 kg</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Câmbio Opticruise</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Giro Zero (ZTS) + Lâmina Buldôzer</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Cabine Leito Teto Alto</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Motor Yanmar 3TNV88F Diesel Tier 4</span>
                 </li>
               </ul>
               <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Condição Especial</span>
-                  <div class="price-value">R$ 580.000</div>
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
                 </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Scania R 450 Highline', 580000)" title="Simular Entrada e Parcelas">
-                  Simular
-                </button>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Mini Escavadeira LiuGong 9035E', 280000)">Simular</button>
               </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Scania%20R%20450%20Streamline%20(R%24%20580.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20na%20Mini%20Escavadeira%20LiuGong%209035E%20ZTS" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                   Tenho Interesse
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Card 2: Volvo FH 540 Globetrotter 6x4 Bug Leve -->
-          <article class="truck-card" data-category="volvo" data-brand="volvo" data-id="2">
+          <!-- Card 2: Escavadeira LiuGong 915E -->
+          <article class="truck-card" data-category="liugong maquinas escavadeira" data-brand="liugong" data-id="2">
             <div class="card-media">
-              <img src="assets/img/truck_2.jpg" alt="Volvo FH 540 6x4 Globetrotter" loading="lazy">
-              <span class="status-pill status-featured">Destaque da Semana</span>
-              <span class="traction-badge">6x4</span>
+              <img src="assets/img/truck_2.jpg" alt="Escavadeira Hidráulica LiuGong 915E" loading="lazy">
+              <span class="status-pill status-ready">Destaque Máquinas</span>
+              <span class="traction-badge">14.500 kg</span>
             </div>
             <div class="card-body">
               <div class="card-brand-row">
-                <span class="card-make">VOLVO</span>
+                <span class="card-make">LIUGONG</span>
+                <span class="card-year">2023 / 2023</span>
+              </div>
+              <h3 class="card-title">Escavadeira Hidráulica LiuGong 915E</h3>
+              <ul class="specs-list">
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Peso Operacional: 14.500 kg (14,5 Ton)</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Caçamba 0,60 m³ Heavy Duty</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Motor Cummins 4BTAA3.9 Turbo Diesel</span>
+                </li>
+              </ul>
+              <div class="card-price-row">
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
+                </div>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Escavadeira LiuGong 915E', 590000)">Simular</button>
+              </div>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20na%20Escavadeira%20Hidráulica%20LiuGong%20915E" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  Tenho Interesse
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Pá Carregadeira Articulada LiuGong 816C -->
+          <article class="truck-card" data-category="liugong maquinas carregadeira" data-brand="liugong" data-id="3">
+            <div class="card-media">
+              <img src="assets/img/truck_3.jpg" alt="Pá Carregadeira Articulada LiuGong 816C" loading="lazy">
+              <span class="status-pill status-ready">Pronta Entrega</span>
+              <span class="traction-badge">4x4 Articulada</span>
+            </div>
+            <div class="card-body">
+              <div class="card-brand-row">
+                <span class="card-make">LIUGONG</span>
+                <span class="card-year">2023 / 2023</span>
+              </div>
+              <h3 class="card-title">Pá Carregadeira Articulada LiuGong 816C</h3>
+              <ul class="specs-list">
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Caçamba 1,0 m³ de Alta Capacidade</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Transmissão Power Shift 4x4</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Cabine Panorâmica ROPS/FOPS c/ Ar</span>
+                </li>
+              </ul>
+              <div class="card-price-row">
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
+                </div>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Pá Carregadeira LiuGong 816C', 380000)">Simular</button>
+              </div>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20na%20Pá%20Carregadeira%20LiuGong%20816C" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  Tenho Interesse
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Mini Carregadeira LiuGong 365B Skid Steer -->
+          <article class="truck-card" data-category="liugong maquinas carregadeira" data-brand="liugong" data-id="4">
+            <div class="card-media">
+              <img src="assets/img/truck_4.jpg" alt="Mini Carregadeira LiuGong 365B Skid Steer" loading="lazy">
+              <span class="status-pill status-ready">Pronta Entrega</span>
+              <span class="traction-badge">Skid Steer</span>
+            </div>
+            <div class="card-body">
+              <div class="card-brand-row">
+                <span class="card-make">LIUGONG</span>
+                <span class="card-year">2023 / 2023</span>
+              </div>
+              <h3 class="card-title">Mini Carregadeira LiuGong 365B (Skid Steer)</h3>
+              <ul class="specs-list">
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Carga Operacional: 795 kg | Cap: 1.600 kg</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Engate Rápido Universal de Implementos</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Motor Diesel de Alto Torque e Economia</span>
+                </li>
+              </ul>
+              <div class="card-price-row">
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
+                </div>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Mini Carregadeira LiuGong 365B', 240000)">Simular</button>
+              </div>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20na%20Mini%20Carregadeira%20LiuGong%20365B" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  Tenho Interesse
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Empilhadeira LiuGong E25 GLP -->
+          <article class="truck-card" data-category="liugong maquinas outros" data-brand="liugong" data-id="5">
+            <div class="card-media">
+              <img src="assets/img/truck_5.jpg" alt="Empilhadeira LiuGong E25 GLP" loading="lazy">
+              <span class="status-pill status-ready">Revisada</span>
+              <span class="traction-badge">2.5 Ton</span>
+            </div>
+            <div class="card-body">
+              <div class="card-brand-row">
+                <span class="card-make">LIUGONG</span>
                 <span class="card-year">2022 / 2022</span>
               </div>
-              <h3 class="card-title">Volvo FH 540 Globetrotter I-Shift</h3>
+              <h3 class="card-title">Empilhadeira LiuGong E25 (2.5 Toneladas)</h3>
               <ul class="specs-list">
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>310.000 km</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Capacidade de Carga: 2.500 kg (2.5T)</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Câmbio I-Shift Inteligente</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Torre Triplex 4,50m + Deslocador Lateral</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Bug Leve · Rodas Alumínio</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Motorização GLP/Gasolina Pneus Pneumáticos</span>
                 </li>
               </ul>
               <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Valor à Vista</span>
-                  <div class="price-value">R$ 690.000</div>
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
                 </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Volvo FH 540 Globetrotter', 690000)">Simular</button>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Empilhadeira LiuGong E25', 135000)">Simular</button>
               </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Volvo%20FH%20540%20(R%24%20690.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20na%20Empilhadeira%20LiuGong%20E25" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                   Tenho Interesse
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Card 3: Mercedes-Benz Actros 2651 6x4 -->
-          <article class="truck-card" data-category="mercedes" data-brand="mercedes" data-id="3">
+          <!-- Card 6: Ford Cargo 2428 6x2 Caçamba Basculante -->
+          <article class="truck-card" data-category="caminhoes cacamba ford" data-brand="ford" data-id="6">
             <div class="card-media">
-              <img src="assets/img/truck_3.jpg" alt="Mercedes-Benz Actros 2651 6x4" loading="lazy">
-              <span class="status-pill status-ready">Único Dono</span>
-              <span class="traction-badge">6x4</span>
+              <img src="assets/img/truck_6.jpg" alt="Ford Cargo 2428 6x2 Caçamba Basculante" loading="lazy">
+              <span class="status-pill status-ready">Trabalhando</span>
+              <span class="traction-badge">6x2 Trucado</span>
+            </div>
+            <div class="card-body">
+              <div class="card-brand-row">
+                <span class="card-make">FORD</span>
+                <span class="card-year">2011 / 2012</span>
+              </div>
+              <h3 class="card-title">Ford Cargo 2428 6x2 Caçamba Basculante</h3>
+              <ul class="specs-list">
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Caçamba Basculante de Aço Reforçada</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Motor Cummins 6 Cilindros Turbo 275 cv</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Truque Pneumático e Freio a Ar Total</span>
+                </li>
+              </ul>
+              <div class="card-price-row">
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
+                </div>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Ford Cargo 2428 6x2 Caçamba', 245000)">Simular</button>
+              </div>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20no%20Ford%20Cargo%202428%20Caçamba" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  Tenho Interesse
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Mercedes-Benz L 1113 Toco Baú -->
+          <article class="truck-card" data-category="caminhoes bau mercedes" data-brand="mercedes" data-id="7">
+            <div class="card-media">
+              <img src="assets/img/truck_7.jpg" alt="Mercedes-Benz L 1113 Toco Baú" loading="lazy">
+              <span class="status-pill status-ready">Clássico Revisado</span>
+              <span class="traction-badge">4x2 Toco</span>
             </div>
             <div class="card-body">
               <div class="card-brand-row">
                 <span class="card-make">MERCEDES-BENZ</span>
-                <span class="card-year">2020 / 2021</span>
+                <span class="card-year">1982 / 1982</span>
               </div>
-              <h3 class="card-title">MB Actros 2651 Megaspace 6x4</h3>
+              <h3 class="card-title">Mercedes-Benz L 1113 Toco Baú</h3>
               <ul class="specs-list">
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>460.000 km</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Baú Furgão Alumínio Carga Seca</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>PowerShift 3 Automatizado</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Motor OM-352 6 Cilindros Diesel Original</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Freio Retarder · Ar Digital</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Direção Hidráulica e Freios a Ar</span>
                 </li>
               </ul>
               <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Condição Especial</span>
-                  <div class="price-value">R$ 530.000</div>
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
                 </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Mercedes-Benz Actros 2651', 530000)">Simular</button>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Mercedes-Benz L 1113 Toco Baú', 85000)">Simular</button>
               </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20MB%20Actros%202651%20(R%24%20530.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20no%20Mercedes-Benz%20L%201113%20Baú" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                   Tenho Interesse
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Card 4: Scania R440 6x2 Highline -->
-          <article class="truck-card" data-category="scania" data-brand="scania" data-id="4">
+          <!-- Card 8: Trator Agrícola Agrale 4300 -->
+          <article class="truck-card" data-category="agricola maquinas outros" data-brand="agrale" data-id="8">
             <div class="card-media">
-              <img src="assets/img/truck_4.jpg" alt="Scania R 440 6x2 Highline" loading="lazy">
-              <span class="status-pill status-ready">Revisado na Concessionária</span>
-              <span class="traction-badge">6x2</span>
+              <img src="assets/img/truck_8.jpg" alt="Trator Agrícola Agrale 4300" loading="lazy">
+              <span class="status-pill status-ready">Agrícola</span>
+              <span class="traction-badge">Tração 4x2</span>
             </div>
             <div class="card-body">
               <div class="card-brand-row">
-                <span class="card-make">SCANIA</span>
-                <span class="card-year">2018 / 2019</span>
+                <span class="card-make">AGRALE</span>
+                <span class="card-year">1995 / 1995</span>
               </div>
-              <h3 class="card-title">Scania R 440 Highline Trucado 6x2</h3>
+              <h3 class="card-title">Trator Agrícola Agrale 4300 Diesel</h3>
               <ul class="specs-list">
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>590.000 km</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Motor Agrale 2 Cilindros Diesel Robusto</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Opticruise sem Pedal</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Tomada de Força (TDP) e Hidráulico 3 Pontos</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Pneus Novos · Climatizador</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Capota Solar Protetora e Pneus Agrícolas</span>
                 </li>
               </ul>
               <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Preço de Repasse</span>
-                  <div class="price-value">R$ 440.000</div>
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
                 </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Scania R 440 Highline', 440000)">Simular</button>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Trator Agrale 4300', 48000)">Simular</button>
               </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Scania%20R%20440%20(R%24%20440.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20no%20Trator%20Agrícola%20Agrale%204300" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                   Tenho Interesse
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Card 5: Volvo FH 460 Globetrotter 6x2 -->
-          <article class="truck-card" data-category="volvo" data-brand="volvo" data-id="5">
+          <!-- Card 9: Ford Cargo 1519 Toco Baú Alumínio -->
+          <article class="truck-card" data-category="caminhoes bau ford" data-brand="ford" data-id="9">
             <div class="card-media">
-              <img src="assets/img/truck_5.jpg" alt="Volvo FH 460 6x2 Globetrotter" loading="lazy">
-              <span class="status-pill status-ready">Histórico Completo</span>
-              <span class="traction-badge">6x2</span>
-            </div>
-            <div class="card-body">
-              <div class="card-brand-row">
-                <span class="card-make">VOLVO</span>
-                <span class="card-year">2019 / 2020</span>
-              </div>
-              <h3 class="card-title">Volvo FH 460 Globetrotter 6x2</h3>
-              <ul class="specs-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>510.000 km</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Câmbio I-Shift Automático</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Defletores Originais · Tanque Inox</span>
-                </li>
-              </ul>
-              <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Condição Especial</span>
-                  <div class="price-value">R$ 515.000</div>
-                </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Volvo FH 460 Globetrotter', 515000)">Simular</button>
-              </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Volvo%20FH%20460%20(R%24%20515.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
-                  Tenho Interesse
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 6: Carreta Graneleira Noma 3 Eixos 14m -->
-          <article class="truck-card" data-category="carretas" data-brand="noma" data-id="6">
-            <div class="card-media">
-              <img src="assets/img/truck_6.jpg" alt="Carreta Graneleira Noma 3 Eixos" loading="lazy">
-              <span class="status-pill status-ready">Pronta p/ Rodar</span>
-              <span class="traction-badge">3 Eixos</span>
-            </div>
-            <div class="card-body">
-              <div class="card-brand-row">
-                <span class="card-make">NOMA IMPLEMENTOS</span>
-                <span class="card-year">2021 / 2021</span>
-              </div>
-              <h3 class="card-title">Semirreboque Graneleiro 14.00m</h3>
-              <ul class="specs-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>Comprimento: 14.00 m</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Tampas Ecológicas 1,80m</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Rodado a Disco · Sem Pneus</span>
-                </li>
-              </ul>
-              <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Valor Especial</span>
-                  <div class="price-value">R$ 138.000</div>
-                </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Carreta Graneleira Noma', 138000)">Simular</button>
-              </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20Carreta%20Graneleira%20Noma%20(R%24%20138.000)%20anunciada%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
-                  Tenho Interesse
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 7: Mercedes-Benz Axor 2544 6x2 -->
-          <article class="truck-card" data-category="mercedes" data-brand="mercedes" data-id="7">
-            <div class="card-media">
-              <img src="assets/img/truck_7.jpg" alt="Mercedes-Benz Axor 2544 6x2" loading="lazy">
-              <span class="status-pill status-ready">Ótimo Custo-Benefício</span>
-              <span class="traction-badge">6x2</span>
-            </div>
-            <div class="card-body">
-              <div class="card-brand-row">
-                <span class="card-make">MERCEDES-BENZ</span>
-                <span class="card-year">2017 / 2018</span>
-              </div>
-              <h3 class="card-title">MB Axor 2544 Teto Alto Trucado</h3>
-              <ul class="specs-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>620.000 km</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Câmbio Automatizado</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Cabine com Cama Grande</span>
-                </li>
-              </ul>
-              <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Oportunidade</span>
-                  <div class="price-value">R$ 385.000</div>
-                </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Mercedes Axor 2544', 385000)">Simular</button>
-              </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20MB%20Axor%202544%20(R%24%20385.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
-                  Tenho Interesse
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 8: Scania R500 V8 Super 6x4 -->
-          <article class="truck-card" data-category="scania" data-brand="scania" data-id="8">
-            <div class="card-media">
-              <img src="assets/img/truck_8.jpg" alt="Scania R500 6x4 V8" loading="lazy">
-              <span class="status-pill status-featured">Raridade & Força</span>
-              <span class="traction-badge">6x4</span>
-            </div>
-            <div class="card-body">
-              <div class="card-brand-row">
-                <span class="card-make">SCANIA</span>
-                <span class="card-year">2020 / 2020</span>
-              </div>
-              <h3 class="card-title">Scania R 500 V8 Highline 6x4</h3>
-              <ul class="specs-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>380.000 km</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Opticruise c/ Retarder</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Faróis no Teto · Pacote Luxo</span>
-                </li>
-              </ul>
-              <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Condição Especial</span>
-                  <div class="price-value">R$ 675.000</div>
-                </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Scania R 500 V8', 675000)">Simular</button>
-              </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Scania%20R%20500%20(R%24%20675.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
-                  Tenho Interesse
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 9: Carreta Basculante Randon 30m³ -->
-          <article class="truck-card" data-category="carretas" data-brand="randon" data-id="9">
-            <div class="card-media">
-              <img src="assets/img/truck_9.jpg" alt="Carreta Basculante Randon 3 Eixos" loading="lazy">
+              <img src="assets/img/truck_9.jpg" alt="Ford Cargo 1519 Toco Baú Alumínio" loading="lazy">
               <span class="status-pill status-ready">Pronta Entrega</span>
-              <span class="traction-badge">Basculante</span>
+              <span class="traction-badge">4x2 Toco</span>
             </div>
             <div class="card-body">
               <div class="card-brand-row">
-                <span class="card-make">RANDON</span>
-                <span class="card-year">2022 / 2022</span>
+                <span class="card-make">FORD</span>
+                <span class="card-year">2014 / 2015</span>
               </div>
-              <h3 class="card-title">Semirreboque Basculante 30m³</h3>
+              <h3 class="card-title">Ford Cargo 1519 Toco Baú Alumínio</h3>
               <ul class="specs-list">
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>Capacidade: 30 m³</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Baú Furgão Alumínio 7,50m Carga Seca</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Chapa de Alta Resistência</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Motor Cummins ISB 4.5 Turbo Intercooler 189 cv</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Pistão Frontal Hyva · Lona Fácil</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Defletor Aerodinâmico e Freios Pneumáticos</span>
                 </li>
               </ul>
               <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Condição Especial</span>
-                  <div class="price-value">R$ 178.000</div>
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
                 </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Basculante Randon 30m³', 178000)">Simular</button>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Ford Cargo 1519 Toco Baú', 195000)">Simular</button>
               </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20Basculante%20Randon%20(R%24%20178.000)%20anunciada%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20no%20Ford%20Cargo%201519%20Baú" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                   Tenho Interesse
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Card 10: Volvo VM 330 8x2 Bitruck -->
-          <article class="truck-card" data-category="volvo" data-brand="volvo" data-id="10">
+          <!-- Card 10: Ford F-600 Clássica Madeira -->
+          <article class="truck-card" data-category="caminhoes outros ford" data-brand="ford" data-id="10">
             <div class="card-media">
-              <img src="assets/img/truck_10.jpg" alt="Volvo VM 330 8x2 Bitruck" loading="lazy">
-              <span class="status-pill status-ready">Bitruck Direcional</span>
-              <span class="traction-badge">8x2</span>
+              <img src="assets/img/truck_10.jpg" alt="Ford F-600 Clássica Carroceria Madeira" loading="lazy">
+              <span class="status-pill status-ready">Raridade</span>
+              <span class="traction-badge">4x2 Toco</span>
+            </div>
+            <div class="card-body">
+              <div class="card-brand-row">
+                <span class="card-make">FORD</span>
+                <span class="card-year">1978 / 1978</span>
+              </div>
+              <h3 class="card-title">Ford F-600 Clássica Carroceria Madeira</h3>
+              <ul class="specs-list">
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Carroceria de Madeira Graneleira Conservada</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Motor Diesel 6 Cilindros de Alta Força</span>
+                </li>
+                <li>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Câmbio 5 Marchas com Reduzida Mecânica</span>
+                </li>
+              </ul>
+              <div class="card-price-row">
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
+                </div>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Ford F-600 Clássico', 65000)">Simular</button>
+              </div>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20no%20Ford%20F-600%20Clássico" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  Tenho Interesse
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 11: Volvo VM 270 6x4 Caçamba Traçado -->
+          <article class="truck-card" data-category="caminhoes cacamba volvo" data-brand="volvo" data-id="11">
+            <div class="card-media">
+              <img src="assets/img/truck_11.jpg" alt="Volvo VM 270 6x4 Caçamba Basculante Traçado" loading="lazy">
+              <span class="status-pill status-ready">Traçado Pesado</span>
+              <span class="traction-badge">6x4 Traçado</span>
             </div>
             <div class="card-body">
               <div class="card-brand-row">
                 <span class="card-make">VOLVO</span>
-                <span class="card-year">2021 / 2021</span>
+                <span class="card-year">2013 / 2013</span>
               </div>
-              <h3 class="card-title">Volvo VM 330 Bitruck 8x2 Leito</h3>
+              <h3 class="card-title">Volvo VM 270 6x4 Caçamba Basculante</h3>
               <ul class="specs-list">
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>290.000 km</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Caçamba Basculante Meia Cana Reforçada</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Câmbio I-Shift Inteligente</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Tração 6x4 com Cubos Redutores Pesados</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Chassi Longo p/ Carroceria ou Baú</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Motor MWM 7.2L Turbo Intercooler 270 cv</span>
                 </li>
               </ul>
               <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Condição Especial</span>
-                  <div class="price-value">R$ 490.000</div>
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
                 </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Volvo VM 330 8x2', 490000)">Simular</button>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Volvo VM 270 6x4 Caçamba', 290000)">Simular</button>
               </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Volvo%20VM%20330%20(R%24%20490.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20no%20Volvo%20VM%20270%206x4%20Caçamba" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                   Tenho Interesse
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Card 11: Scania G420 6x2 Trucado -->
-          <article class="truck-card" data-category="scania" data-brand="scania" data-id="11">
+          <!-- Card 12: Honda Civic LXS 1.8 16V Automático (Veículo de Troca) -->
+          <article class="truck-card" data-category="troca outros honda" data-brand="honda" data-id="12">
             <div class="card-media">
-              <img src="assets/img/truck_11.jpg" alt="Scania G 420 6x2" loading="lazy">
-              <span class="status-pill status-ready">Super Conservado</span>
-              <span class="traction-badge">6x2</span>
-            </div>
-            <div class="card-body">
-              <div class="card-brand-row">
-                <span class="card-make">SCANIA</span>
-                <span class="card-year">2014 / 2014</span>
-              </div>
-              <h3 class="card-title">Scania G 420 Trucado 6x2</h3>
-              <ul class="specs-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>780.000 km (Motor Feito)</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Câmbio Mecânico Confiável</span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Revisões em Dia · Pronto Rodar</span>
-                </li>
-              </ul>
-              <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Preço Acessível</span>
-                  <div class="price-value">R$ 295.000</div>
-                </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Scania G 420 6x2', 295000)">Simular</button>
-              </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Scania%20G%20420%20(R%24%20295.000)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
-                  Tenho Interesse
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 12: Utilitário / Apoio Honda Civic LXS Automático -->
-          <article class="truck-card" data-category="outros" data-brand="honda" data-id="12">
-            <div class="card-media">
-              <img src="assets/img/truck_12.jpg" alt="Honda Civic 2013 Automático" loading="lazy">
-              <span class="status-pill status-ready">Veículo de Apoio / Repasse</span>
+              <img src="assets/img/truck_12.jpg" alt="Honda Civic LXS 1.8 Automático" loading="lazy">
+              <span class="status-pill status-ready">Veículo de Troca</span>
               <span class="traction-badge">Automático</span>
             </div>
             <div class="card-body">
@@ -702,32 +690,31 @@
                 <span class="card-make">HONDA</span>
                 <span class="card-year">2013 / 2013</span>
               </div>
-              <h3 class="card-title">Honda Civic LXS 1.8 Automático</h3>
+              <h3 class="card-title">Honda Civic LXS 1.8 16V Automático</h3>
               <ul class="specs-list">
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 11H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.93A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></svg>
-                  <span>142.000 km</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Aceito na Troca por Pesados / Repasse</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 8h14v12H5z"/></svg>
-                  <span>Câmbio Automático · Completo</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                  <span>Câmbio Automático 5 Marchas com Borboleta</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-                  <span>Bancos em Couro · Pneus Bons</span>
+                  <svg class="spec-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+                  <span>Motor 1.8 i-VTEC Flex 140 cv Completo</span>
                 </li>
               </ul>
               <div class="card-price-row">
-                <div>
-                  <span class="price-prefix">Pegamos na Troca</span>
-                  <div class="price-value">R$ 56.900</div>
+                <div class="price-box">
+                  <span class="price-label">Preço sob Consulta</span>
+                  <span class="price-value">Consulte Condição</span>
                 </div>
-                <button class="btn-card-calc" onclick="openSimulatorWith('Honda Civic 2013', 56900)">Simular</button>
+                <button class="simulate-quick-btn" onclick="openSimulatorWith('Honda Civic LXS 1.8 2013', 59000)">Simular</button>
               </div>
-              <div class="card-actions">
-                <a href="https://wa.me/555198913039?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Honda%20Civic%202013%20(R%24%2056.900)%20anunciado%20no%20site."
-                  target="_blank" rel="noopener" class="btn btn-primary btn-block">
-                  <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.13c-.24.69-1.42 1.32-1.96 1.36-.52.05-1.01.24-3.4-.71-2.88-1.13-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94s.73-2.09 1-2.37c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.45.12.62-.07.17-.19.71-.83.9-1.12.19-.29.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.48.21.55.33.07.12.07.69-.17 1.37Z" /></svg>
+              <div class="card-cta-row">
+                <a href="https://wa.me/5549999120610?text=Olá!%20Tenho%20interesse%20no%20Honda%20Civic%20LXS%202013" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                   Tenho Interesse
                 </a>
               </div>
@@ -788,20 +775,20 @@
             <form id="simulatorForm" onsubmit="handleSimulatorSubmit(event)">
               <div class="form-group">
                 <label for="simVehicle">Veículo Escolhido</label>
-                <select id="simVehicle" required onchange="handleVehicleChange()">
-                  <option value="580000">Scania R 450 Streamline 6x2 (R$ 580.000)</option>
-                  <option value="690000" selected>Volvo FH 540 Globetrotter 6x4 (R$ 690.000)</option>
-                  <option value="530000">MB Actros 2651 Megaspace (R$ 530.000)</option>
-                  <option value="440000">Scania R 440 Highline 6x2 (R$ 440.000)</option>
-                  <option value="515000">Volvo FH 460 Globetrotter 6x2 (R$ 515.000)</option>
-                  <option value="138000">Carreta Graneleira Noma 14m (R$ 138.000)</option>
-                  <option value="385000">MB Axor 2544 Teto Alto (R$ 385.000)</option>
-                  <option value="675000">Scania R 500 V8 6x4 (R$ 675.000)</option>
-                  <option value="178000">Carreta Basculante Randon 30m³ (R$ 178.000)</option>
-                  <option value="490000">Volvo VM 330 Bitruck 8x2 (R$ 490.000)</option>
-                  <option value="295000">Scania G 420 Trucado 6x2 (R$ 295.000)</option>
-                  <option value="56900">Honda Civic 2013 Automático (R$ 56.900)</option>
-                </select>
+                              <select id="simVehicle" aria-label="Selecione o veículo ou máquina">
+                <option value="265000">Mini Escavadeira LiuGong 9035E ZTS — R$ 265.000</option>
+                <option value="480000">Escavadeira Hidráulica LiuGong 915E — R$ 480.000</option>
+                <option value="335000">Pá Carregadeira LiuGong 816C — R$ 335.000</option>
+                <option value="185000">Mini Carregadeira LiuGong 365B — R$ 185.000</option>
+                <option value="125000">Empilhadeira LiuGong E25 GLP — R$ 125.000</option>
+                <option value="228000">Ford Cargo 2428 6x2 Caçamba — R$ 228.000</option>
+                <option value="85000">Mercedes-Benz 1113 Toco Baú — R$ 85.000</option>
+                <option value="58000">Trator Agrícola Agrale 4300 — R$ 58.000</option>
+                <option value="195000">Ford Cargo 1519 Toco Baú — R$ 195.000</option>
+                <option value="65000">Ford F-600 Carroceria Madeira — R$ 65.000</option>
+                <option value="285000">Volvo VM 270 6x4 Caçamba — R$ 285.000</option>
+                <option value="58900">Honda Civic 2013 Automático — R$ 58.900</option>
+              </select>
               </div>
 
               <div class="form-group">
@@ -996,12 +983,13 @@
       </div>
 
       <div class="footer-col">
-        <h4>Marcas em Destaque</h4>
+                <h4>Categorias em Destaque</h4>
         <ul>
-          <li><a href="#estoque" onclick="triggerFilter('scania')">Caminhões Scania</a></li>
-          <li><a href="#estoque" onclick="triggerFilter('volvo')">Caminhões Volvo</a></li>
-          <li><a href="#estoque" onclick="triggerFilter('mercedes')">Mercedes-Benz</a></li>
-          <li><a href="#estoque" onclick="triggerFilter('carretas')">Carretas & Basculantes</a></li>
+          <li><a href="#estoque" onclick="triggerFilter('liugong')">Máquinas Pesadas LiuGong</a></li>
+          <li><a href="#estoque" onclick="triggerFilter('cacamba')">Caminhões Caçamba Basculante</a></li>
+          <li><a href="#estoque" onclick="triggerFilter('bau')">Caminhões Baú Carga Seca</a></li>
+          <li><a href="#estoque" onclick="triggerFilter('agricola')">Tratores & Linha Agrícola</a></li>
+          <li><a href="#estoque" onclick="triggerFilter('troca')">Veículos de Troca / Repasse</a></li>
         </ul>
       </div>
 
