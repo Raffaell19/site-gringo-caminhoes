@@ -10,6 +10,7 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  initBrandLogoScroll();
   initMobileMenu();
   initHeaderScroll();
   initMetricsCounter();
@@ -18,6 +19,39 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollReveal();
   setCurrentYear();
 });
+
+/* ==========================================================================
+   LOGO CLICK SCROLL TO FIRST SECTION
+   ========================================================================== */
+function initBrandLogoScroll() {
+  const brandLinks = document.querySelectorAll(".brand-link");
+  const heroSection = document.getElementById("inicio") || document.querySelector(".hero-section");
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const navMenu = document.getElementById("navMenu");
+
+  brandLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      // Fechar menu mobile se estiver aberto
+      if (navMenu && navMenu.classList.contains("open")) {
+        hamburgerBtn?.setAttribute("aria-expanded", "false");
+        navMenu.classList.remove("open");
+      }
+
+      // Rolagem suave até a primeira seção (Hero)
+      if (heroSection) {
+        heroSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      if (window.history.pushState) {
+        window.history.pushState(null, "", "#inicio");
+      }
+    });
+  });
+}
 
 /* ==========================================================================
    MOBILE MENU TOGGLE

@@ -269,6 +269,8 @@ button, input, select {
 .brand-link {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .logo-wrapper {
