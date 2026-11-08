@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="truckGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0b0f17"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#eab308" stroke-width="2" stroke-opacity="0.5"/>
+  <!-- Stylized Heavy Truck Silhouette -->
+  <path d="M12 40 L12 28 C12 26 13 24 15 24 L34 24 L42 32 L48 32 C50 32 52 34 52 36 L52 40 Z" fill="url(#truckGrad)" />
+  <circle cx="22" cy="42" r="5" fill="#0b0f17" stroke="#eab308" stroke-width="2.5"/>
+  <circle cx="44" cy="42" r="5" fill="#0b0f17" stroke="#eab308" stroke-width="2.5"/>
+  <!-- Front windshield -->
+  <path d="M33 26 L40 33 L33 33 Z" fill="#0b0f17" />
+  <!-- G letter insignia -->
+  <text x="32" y="56" fill="#eab308" font-family="system-ui, sans-serif" font-size="10" font-weight="900" text-anchor="middle" letter-spacing="1">GRINGO</text>
+</svg>
