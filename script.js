@@ -59,23 +59,32 @@ function initBrandLogoScroll() {
 function initMobileMenu() {
   const hamburgerBtn = document.getElementById("hamburgerBtn");
   const navMenu = document.getElementById("navMenu");
+  const menuBackdrop = document.getElementById("menuBackdrop");
   const navLinks = document.querySelectorAll(".nav-item, .nav-cta");
 
   if (!hamburgerBtn || !navMenu) return;
 
+  function closeMenu() {
+    hamburgerBtn.setAttribute("aria-expanded", "false");
+    navMenu.classList.remove("open");
+    menuBackdrop?.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
   function toggleMenu() {
     const isExpanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
-    hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
-    navMenu.classList.toggle("open");
+    const willOpen = !isExpanded;
+    hamburgerBtn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    navMenu.classList.toggle("open", willOpen);
+    menuBackdrop?.classList.toggle("active", willOpen);
+    document.body.style.overflow = willOpen ? "hidden" : "";
   }
 
   hamburgerBtn.addEventListener("click", toggleMenu);
+  menuBackdrop?.addEventListener("click", closeMenu);
 
   navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      hamburgerBtn.setAttribute("aria-expanded", "false");
-      navMenu.classList.remove("open");
-    });
+    link.addEventListener("click", closeMenu);
   });
 }
 

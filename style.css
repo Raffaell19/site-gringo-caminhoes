@@ -1448,32 +1448,62 @@ input[type="range"] {
   }
 }
 
+/* Menu Backdrop Overlay */
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(4, 7, 12, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1002;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.menu-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 @media (max-width: 860px) {
+  /* Prevent iOS Safari auto-zoom on inputs */
+  input, select, textarea, .search-input-wrap input, .form-group select {
+    font-size: 16px !important;
+  }
+
   .nav-menu {
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    width: min(340px, 85vw);
+    height: 100dvh;
+    width: min(320px, 85vw);
     background-color: #080c14;
     border-left: 1px solid var(--border-light);
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 3rem 2.5rem;
+    padding: 3rem 2rem;
     gap: 1.5rem;
-    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.8);
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.85);
     transform: translateX(100%);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
     z-index: 1004;
   }
 
   .nav-menu.open {
     transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-item {
     font-size: 1.25rem;
+    padding-block: 0.25rem;
+    width: 100%;
   }
 
   .hamburger-btn {
@@ -1500,13 +1530,45 @@ input[type="range"] {
 
 @media (max-width: 640px) {
   .brand-logo {
-    height: 40px;
-    max-width: 175px;
+    height: 38px;
+    max-width: 165px;
   }
 
   .footer-logo {
-    height: 48px;
-    max-width: 210px;
+    height: 46px;
+    max-width: 200px;
+  }
+
+  .catalog-controls {
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  /* Carrossel horizontal suave de filtros para toque em telas móveis */
+  .filter-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 0.5rem;
+    margin-inline: -1.5rem;
+    padding-inline: 1.5rem;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    white-space: nowrap;
+    padding: 0.75rem 1.15rem;
+    font-size: 0.88rem;
+    min-height: 44px;
   }
 
   .vehicles-grid {
@@ -1538,6 +1600,71 @@ input[type="range"] {
 
   .term-selector {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Botão Flutuante do WhatsApp adaptado para safe-area de iPhones modernos */
+  .floating-wa {
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .floating-wa .wa-tooltip {
+    display: none;
+  }
+
+  .wa-icon-circle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .wa-icon-circle svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padding {
+    padding-block: 3.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 8.8vw, 2.6rem);
+    line-height: 1.1;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-metrics-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 1rem;
+    padding: 1.25rem 1rem;
+    width: 100%;
+  }
+
+  .metric-num {
+    font-size: 1.65rem;
+  }
+
+  .metric-label {
+    font-size: 0.72rem;
+  }
+
+  .sim-card {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .sim-result-box {
+    padding: 1.25rem 1rem;
+  }
+
+  .card-body {
+    padding: 1.25rem 1.15rem;
   }
 }
 
