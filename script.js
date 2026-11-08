@@ -334,3 +334,4 @@ function setCurrentYear() {
     yearEl.textContent = new Date().getFullYear();
   }
 }
+
